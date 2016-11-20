@@ -10,7 +10,7 @@
     <meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://yiz.github.io/post/" />
+<meta property="og:url" content="https://yiz.github.io/post/" />
 
 
 <meta property="og:updated_time" content="2016-11-20T14:03:43-08:00"/>
@@ -39,18 +39,18 @@
     <meta name="generator" content="Hugo 0.17" />
 
 
-    <base href="http://yiz.github.io/">
-    <link rel="canonical" href="http://yiz.github.io/post/">
+    <base href="https://yiz.github.io/">
+    <link rel="canonical" href="https://yiz.github.io/post/">
 
     <title>Yi Zhang&#39;s blog</title>
 
     <!-- combined, minified CSS -->
-    <link href="http://yiz.github.io/css/style.css" rel="stylesheet">
+    <link href="https://yiz.github.io/css/style.css" rel="stylesheet">
 
     
     <!-- RSS 2.0 feed -->
-    <link href="http://yiz.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Yi Zhang&#39;s blog" />
-    <link href="http://yiz.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="Yi Zhang&#39;s blog" />
+    <link href="https://yiz.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Yi Zhang&#39;s blog" />
+    <link href="https://yiz.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="Yi Zhang&#39;s blog" />
     
 
     
@@ -70,7 +70,7 @@ ga('send', 'pageview');
   <div class="blog-masthead">
     <div class="container">
       <nav class="nav blog-nav">
-        <a class="nav-link " href="http://yiz.github.io/">Home</a>
+        <a class="nav-link " href="https://yiz.github.io/">Home</a>
         
           
         
@@ -80,7 +80,7 @@ ga('send', 'pageview');
 
   <header class="blog-header">
     <div class="container">
-      <h1 class="blog-title"><a href="http://yiz.github.io/" rel="home">Yi Zhang's blog</a></h1>
+      <h1 class="blog-title"><a href="https://yiz.github.io/" rel="home">Yi Zhang's blog</a></h1>
       
     </div>
   </header>
@@ -97,12 +97,16 @@ ga('send', 'pageview');
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title"><a href="http://yiz.github.io/2016/11/first-post/">first post</a></h2>
+    <h2 class="blog-post-title"><a href="https://yiz.github.io/2016/11/first-post/">first post</a></h2>
     <p class="blog-post-meta"><time datetime="2016-11-20T14:03:43-08:00">Sun Nov 20, 2016</time> by Yi Zhang</p>
   </header>
   hugo new site yiz cd yiz hugo new post/first-post.md hugo server &ndash;buildDrafts cd themes git clone https://github.com/alanorth/hugo-theme-bootstrap4-blog.git cd .. hugo server &ndash;theme=hugo-theme-bootstrap4-blog &ndash;buildDrafts
 Edit config.toml
-  <a href='http://yiz.github.io/2016/11/first-post/'>Read more →</a>
+hugo undraft content/post/first-post.md
+hugo
+cd public git init git remote add origin git@github.com:yiz/yiz.github.io.git git add &ndash;all git commit -m &lsquo;initial commit&rsquo; git push -f origin master
+cd .. git init git remote add origin git@github.com:yiz/blog.git
+  <a href='https://yiz.github.io/2016/11/first-post/'>Read more →</a>
 </article> 
 
   

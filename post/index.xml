@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post-rsses on Yi Zhang&#39;s blog</title>
-    <link>http://yiz.github.io/post/index.xml</link>
+    <link>https://yiz.github.io/post/index.xml</link>
     <description>Recent content in Post-rsses on Yi Zhang&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
     <lastBuildDate>Sun, 20 Nov 2016 14:03:43 -0800</lastBuildDate>
-    <atom:link href="http://yiz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yiz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>first post</title>
-      <link>http://yiz.github.io/2016/11/first-post/</link>
+      <link>https://yiz.github.io/2016/11/first-post/</link>
       <pubDate>Sun, 20 Nov 2016 14:03:43 -0800</pubDate>
       
-      <guid>http://yiz.github.io/2016/11/first-post/</guid>
+      <guid>https://yiz.github.io/2016/11/first-post/</guid>
       <description>&lt;p&gt;hugo new site yiz
 cd yiz
 hugo new post/first-post.md
@@ -26,6 +26,21 @@ cd ..
 hugo server &amp;ndash;theme=hugo-theme-bootstrap4-blog &amp;ndash;buildDrafts&lt;/p&gt;
 
 &lt;p&gt;Edit config.toml&lt;/p&gt;
+
+&lt;p&gt;hugo undraft content/post/first-post.md&lt;/p&gt;
+
+&lt;p&gt;hugo&lt;/p&gt;
+
+&lt;p&gt;cd public
+git init
+git remote add origin git@github.com:yiz/yiz.github.io.git
+git add &amp;ndash;all
+git commit -m &amp;lsquo;initial commit&amp;rsquo;
+git push -f origin master&lt;/p&gt;
+
+&lt;p&gt;cd ..
+git init
+git remote add origin git@github.com:yiz/blog.git&lt;/p&gt;
 </description>
     </item>
     
