@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yi Zhang&#39;s blog</title>
+    <link>http://yiz.github.io/index.xml</link>
+    <description>Recent content on Yi Zhang&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <lastBuildDate>Sun, 20 Nov 2016 14:03:43 -0800</lastBuildDate>
+    <atom:link href="http://yiz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>first post</title>
+      <link>http://yiz.github.io/2016/11/first-post/</link>
+      <pubDate>Sun, 20 Nov 2016 14:03:43 -0800</pubDate>
+      
+      <guid>http://yiz.github.io/2016/11/first-post/</guid>
+      <description>&lt;p&gt;hugo new site yiz
+cd yiz
+hugo new post/first-post.md
+hugo server &amp;ndash;buildDrafts
+cd themes
+git clone &lt;a href=&#34;https://github.com/alanorth/hugo-theme-bootstrap4-blog.git&#34;&gt;https://github.com/alanorth/hugo-theme-bootstrap4-blog.git&lt;/a&gt;
+cd ..
+hugo server &amp;ndash;theme=hugo-theme-bootstrap4-blog &amp;ndash;buildDrafts&lt;/p&gt;
+
+&lt;p&gt;Edit config.toml&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
