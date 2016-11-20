@@ -12,8 +12,8 @@
 Edit config.toml
 hugo undraft content/post/first-post.md
 hugo
-cd public git init git remote add origin git@github.com:yiz/yiz.github.io.git git add &ndash;all git commit -m &lsquo;initial commit&rsquo; git push -f origin master
-cd .. git init git remote add origin git@github.com:yiz/blog.git" />
+cd public git init git remote add origin git@github.com:yiz/yiz.github.io.git git add &ndash;all git commit -m &lsquo;initial commit&rsquo; git push &ndash;set-upstream origin master
+cd .. git init git remote add origin git@github.com:yiz/blog.git rm -rf public git submodule add git@github.com:yiz/yiz.github.io.git public git submodule add https://github." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yiz.github.io/2016/11/first-post/" />
 
@@ -35,12 +35,12 @@ cd .. git init git remote add origin git@github.com:yiz/blog.git" />
 Edit config.toml
 hugo undraft content/post/first-post.md
 hugo
-cd public git init git remote add origin git@github.com:yiz/yiz.github.io.git git add &ndash;all git commit -m &lsquo;initial commit&rsquo; git push -f origin master
-cd .. git init git remote add origin git@github.com:yiz/blog.git">
+cd public git init git remote add origin git@github.com:yiz/yiz.github.io.git git add &ndash;all git commit -m &lsquo;initial commit&rsquo; git push &ndash;set-upstream origin master
+cd .. git init git remote add origin git@github.com:yiz/blog.git rm -rf public git submodule add git@github.com:yiz/yiz.github.io.git public git submodule add https://github.">
 
 
 <meta itemprop="dateModified" content="2016-11-20T14:03:43-08:00" />
-<meta itemprop="wordCount" content="60">
+<meta itemprop="wordCount" content="72">
 
 
 
@@ -57,8 +57,8 @@ cd .. git init git remote add origin git@github.com:yiz/blog.git">
 Edit config.toml
 hugo undraft content/post/first-post.md
 hugo
-cd public git init git remote add origin git@github.com:yiz/yiz.github.io.git git add &ndash;all git commit -m &lsquo;initial commit&rsquo; git push -f origin master
-cd .. git init git remote add origin git@github.com:yiz/blog.git"/>
+cd public git init git remote add origin git@github.com:yiz/yiz.github.io.git git add &ndash;all git commit -m &lsquo;initial commit&rsquo; git push &ndash;set-upstream origin master
+cd .. git init git remote add origin git@github.com:yiz/blog.git rm -rf public git submodule add git@github.com:yiz/yiz.github.io.git public git submodule add https://github."/>
 <meta name="twitter:site" content="@starain"/>
 
 
@@ -146,11 +146,14 @@ git init
 git remote add origin git@github.com:yiz/yiz.github.io.git
 git add &ndash;all
 git commit -m &lsquo;initial commit&rsquo;
-git push -f origin master</p>
+git push &ndash;set-upstream origin master</p>
 
 <p>cd ..
 git init
-git remote add origin git@github.com:yiz/blog.git</p>
+git remote add origin git@github.com:yiz/blog.git
+rm -rf public
+git submodule add git@github.com:yiz/yiz.github.io.git public
+git submodule add <a href="https://github.com/alanorth/hugo-theme-bootstrap4-blog.git">https://github.com/alanorth/hugo-theme-bootstrap4-blog.git</a></p>
 
 
         

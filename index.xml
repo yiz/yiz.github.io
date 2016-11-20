@@ -36,11 +36,14 @@ git init
 git remote add origin git@github.com:yiz/yiz.github.io.git
 git add &amp;ndash;all
 git commit -m &amp;lsquo;initial commit&amp;rsquo;
-git push -f origin master&lt;/p&gt;
+git push &amp;ndash;set-upstream origin master&lt;/p&gt;
 
 &lt;p&gt;cd ..
 git init
-git remote add origin git@github.com:yiz/blog.git&lt;/p&gt;
+git remote add origin git@github.com:yiz/blog.git
+rm -rf public
+git submodule add git@github.com:yiz/yiz.github.io.git public
+git submodule add &lt;a href=&#34;https://github.com/alanorth/hugo-theme-bootstrap4-blog.git&#34;&gt;https://github.com/alanorth/hugo-theme-bootstrap4-blog.git&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
