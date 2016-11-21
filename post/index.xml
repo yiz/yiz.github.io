@@ -105,7 +105,7 @@ $ cd ..
 title = &amp;quot;username&#39;s blog&amp;quot;
 theme = &amp;quot;hugo-theme-bootstrap4-blog&amp;quot;
 
-copyright = &amp;quot;Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).&amp;quot;
+copyright = &amp;quot;All Rights Reserved.&amp;quot;
 
 [permalinks]
   post = &amp;quot;/:year/:month/:filename/&amp;quot;
@@ -136,7 +136,9 @@ git push --set-upstream origin master
 
 &lt;p&gt;在这之后，可以用一行命令搞定，献给像我一样的懒癌患者：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;COMMIT_COMMENT=&#39;awesome post&#39;; hugo; cd public; git commit -am $COMMIT_COMMENT; git push; cd ..; git commit -am $COMMIT_COMMENT; git push
+&lt;pre&gt;&lt;code&gt;COMMIT_COMMENT=&#39;awesome post&#39;; \
+hugo; cd public; git commit -am $COMMIT_COMMENT; git push; cd ..; \
+git commit -am $COMMIT_COMMENT; git push
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     

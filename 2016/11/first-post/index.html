@@ -66,7 +66,7 @@
 
 
 <meta itemprop="dateModified" content="2016-11-20T14:03:43-08:00" />
-<meta itemprop="wordCount" content="194">
+<meta itemprop="wordCount" content="181">
 
 
 
@@ -254,7 +254,7 @@ $ cd ..
 title = &quot;username's blog&quot;
 theme = &quot;hugo-theme-bootstrap4-blog&quot;
 
-copyright = &quot;Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).&quot;
+copyright = &quot;All Rights Reserved.&quot;
 
 [permalinks]
   post = &quot;/:year/:month/:filename/&quot;
@@ -285,7 +285,9 @@ git push --set-upstream origin master
 
 <p>在这之后，可以用一行命令搞定，献给像我一样的懒癌患者：</p>
 
-<pre><code>COMMIT_COMMENT='awesome post'; hugo; cd public; git commit -am $COMMIT_COMMENT; git push; cd ..; git commit -am $COMMIT_COMMENT; git push
+<pre><code>COMMIT_COMMENT='awesome post'; \
+hugo; cd public; git commit -am $COMMIT_COMMENT; git push; cd ..; \
+git commit -am $COMMIT_COMMENT; git push
 </code></pre>
 
         
