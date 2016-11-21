@@ -42,15 +42,15 @@
     <base href="https://yiz.github.io/">
     <link rel="canonical" href="https://yiz.github.io/post/">
 
-    <title>Yi Zhang&#39;s blog</title>
+    <title>数说</title>
 
     <!-- combined, minified CSS -->
     <link href="https://yiz.github.io/css/style.css" rel="stylesheet">
 
     
     <!-- RSS 2.0 feed -->
-    <link href="https://yiz.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Yi Zhang&#39;s blog" />
-    <link href="https://yiz.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="Yi Zhang&#39;s blog" />
+    <link href="https://yiz.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="数说" />
+    <link href="https://yiz.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="数说" />
     
 
     
@@ -80,7 +80,7 @@ ga('send', 'pageview');
 
   <header class="blog-header">
     <div class="container">
-      <h1 class="blog-title"><a href="https://yiz.github.io/" rel="home">Yi Zhang's blog</a></h1>
+      <h1 class="blog-title"><a href="https://yiz.github.io/" rel="home">数说</a></h1>
       
     </div>
   </header>
@@ -97,15 +97,28 @@ ga('send', 'pageview');
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title"><a href="https://yiz.github.io/2016/11/first-post/">first post</a></h2>
+    <h2 class="blog-post-title"><a href="https://yiz.github.io/2016/11/first-post/">用Hugo在GitHub上创建自己的个人网站</a></h2>
     <p class="blog-post-meta"><time datetime="2016-11-20T14:03:43-08:00">Sun Nov 20, 2016</time> by Yi Zhang</p>
   </header>
-  hugo new site yiz cd yiz hugo new post/first-post.md hugo server &ndash;buildDrafts cd themes git clone https://github.com/alanorth/hugo-theme-bootstrap4-blog.git cd .. hugo server &ndash;theme=hugo-theme-bootstrap4-blog &ndash;buildDrafts
-Edit config.toml
-hugo undraft content/post/first-post.md
-hugo
-cd public git init git remote add origin git@github.com:yiz/yiz.github.io.git git add &ndash;all git commit -m &lsquo;initial commit&rsquo; git push &ndash;set-upstream origin master
-cd .. git init git remote add origin git@github.com:yiz/blog.git rm -rf public git submodule add git@github.com:yiz/yiz.github.io.git public git submodule add https://github.
+  <h1 id="起源">起源</h1>
+
+<p>一直都有想有个地方能记录自己平时的一些想法，并可以作为交流和分享的平台。</p>
+
+<p>我希望的特点有：</p>
+
+<ul>
+<li>无论在线，还是不在线，都可以随手拈来。</li>
+<li>易于保存和备份，不用害怕哪天服务终止。</li>
+<li>简单，不需要费心管理。</li>
+<li>有修改历史记录。</li>
+<li>可以使用自定义域名，便于迁移。</li>
+</ul>
+
+<p>于是各大社交网络和博客网站就被排除在外。而我有用Git保存笔记的习惯(emacs + org mode)，知道GitHub Pages的服务，但却因为各种原因（主要是拖延症）并没有真正开始。</p>
+
+<p>最近因为抢注 <a href="http://yizhang.us">http://yizhang.us</a> 和 <a href="https://www.github.com/yiz">yiz@github</a> 成功，觉得应该好好利用一下，于是就有了这第一篇文章。不知道能坚持多久，且写且珍惜。^_^</p>
+
+<p></p>
   <a href='https://yiz.github.io/2016/11/first-post/'>Read more →</a>
 </article> 
 
@@ -127,7 +140,7 @@ cd .. git init git remote add origin git@github.com:yiz/blog.git rm -rf public g
   <footer class="blog-footer">
     <p>
       
-      Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International license</a>.
+      &copy;<a href="mailto:yizh.me@gmail.com">Yi Zhang</a> 转载须以超链接形式标明文章原始出处和作者信息
       
     </p>
     <p>

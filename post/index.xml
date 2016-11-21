@@ -1,50 +1,143 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Yi Zhang&#39;s blog</title>
+    <title>Post-rsses on 数说</title>
     <link>https://yiz.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on Yi Zhang&#39;s blog</description>
+    <description>Recent content in Post-rsses on 数说</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <copyright>&amp;copy;[Yi Zhang](mailto:yizh.me@gmail.com) 转载须以超链接形式标明文章原始出处和作者信息</copyright>
     <lastBuildDate>Sun, 20 Nov 2016 14:03:43 -0800</lastBuildDate>
     <atom:link href="https://yiz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>first post</title>
+      <title>用Hugo在GitHub上创建自己的个人网站</title>
       <link>https://yiz.github.io/2016/11/first-post/</link>
       <pubDate>Sun, 20 Nov 2016 14:03:43 -0800</pubDate>
       
       <guid>https://yiz.github.io/2016/11/first-post/</guid>
-      <description>&lt;p&gt;hugo new site yiz
-cd yiz
-hugo new post/first-post.md
-hugo server &amp;ndash;buildDrafts
-cd themes
-git clone &lt;a href=&#34;https://github.com/alanorth/hugo-theme-bootstrap4-blog.git&#34;&gt;https://github.com/alanorth/hugo-theme-bootstrap4-blog.git&lt;/a&gt;
-cd ..
-hugo server &amp;ndash;theme=hugo-theme-bootstrap4-blog &amp;ndash;buildDrafts&lt;/p&gt;
+      <description>&lt;h1 id=&#34;起源&#34;&gt;起源&lt;/h1&gt;
 
-&lt;p&gt;Edit config.toml&lt;/p&gt;
+&lt;p&gt;一直都有想有个地方能记录自己平时的一些想法，并可以作为交流和分享的平台。&lt;/p&gt;
 
-&lt;p&gt;hugo undraft content/post/first-post.md&lt;/p&gt;
+&lt;p&gt;我希望的特点有：&lt;/p&gt;
 
-&lt;p&gt;hugo&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;无论在线，还是不在线，都可以随手拈来。&lt;/li&gt;
+&lt;li&gt;易于保存和备份，不用害怕哪天服务终止。&lt;/li&gt;
+&lt;li&gt;简单，不需要费心管理。&lt;/li&gt;
+&lt;li&gt;有修改历史记录。&lt;/li&gt;
+&lt;li&gt;可以使用自定义域名，便于迁移。&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;cd public
-git init
-git remote add origin git@github.com:yiz/yiz.github.io.git
-git add &amp;ndash;all
-git commit -m &amp;lsquo;initial commit&amp;rsquo;
-git push &amp;ndash;set-upstream origin master&lt;/p&gt;
+&lt;p&gt;于是各大社交网络和博客网站就被排除在外。而我有用Git保存笔记的习惯(emacs + org mode)，知道GitHub Pages的服务，但却因为各种原因（主要是拖延症）并没有真正开始。&lt;/p&gt;
 
-&lt;p&gt;cd ..
-git init
-git remote add origin git@github.com:yiz/blog.git
-rm -rf public
-git submodule add git@github.com:yiz/yiz.github.io.git public
-git submodule add &lt;a href=&#34;https://github.com/alanorth/hugo-theme-bootstrap4-blog.git&#34;&gt;https://github.com/alanorth/hugo-theme-bootstrap4-blog.git&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;最近因为抢注 &lt;a href=&#34;http://yizhang.us&#34;&gt;http://yizhang.us&lt;/a&gt; 和 &lt;a href=&#34;https://www.github.com/yiz&#34;&gt;yiz@github&lt;/a&gt; 成功，觉得应该好好利用一下，于是就有了这第一篇文章。不知道能坚持多久，且写且珍惜。^_^&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;github-pages和hugo简介&#34;&gt;GitHub Pages和Hugo简介&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;是GitHub提供的免费建站空间。优点是几乎不需要配置，只要注册帐号，按命名规则建立一个git代码仓库，提交的文件就会自动部署到对应&lt;code&gt;github.io&lt;/code&gt;域名。&lt;/p&gt;
+
+&lt;p&gt;但是GitHub Pages只支持静态页面，这就轮到Hugo出场了。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;是用go语言开发，基于&lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;Markdown&lt;/a&gt;的静态页面生成引擎，比起GitHub Pages推荐的&lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;，强调速度和轻量，特别符合我的审美哲学。更详细可以参考作者写的&lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;介绍&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;我喜欢Hugo的特点有：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;极简单的安装，下载预先编译好的可执行文件即可。&lt;/li&gt;
+&lt;li&gt;无干扰，Markdown不用考虑格式化的问题，只要按语义标记文章内容就可以了。&lt;/li&gt;
+&lt;li&gt;快，&lt;code&gt;hugo server&lt;/code&gt;运行起来后只要保存Markdown文件，浏览器会自动刷新看到效果。&lt;/li&gt;
+&lt;li&gt;该有的功能都有，到目前为止还没发现有功能缺失。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;github上的repository设置&#34;&gt;GitHub上的repository设置&lt;/h1&gt;
+
+&lt;p&gt;GitHub Pages本身需要一个同名代码仓库自动部署，而我用另一代码仓库存放所有源文件。&lt;/p&gt;
+
+&lt;p&gt;点击&lt;strong&gt;New Repository&lt;/strong&gt;，创建名为&lt;code&gt;blog&lt;/code&gt;的代码仓库，用于存放文章源代码以及Hugo的配置。&lt;/p&gt;
+
+&lt;p&gt;点击&lt;strong&gt;New Repository&lt;/strong&gt;，创建名为&lt;code&gt;username.github.io&lt;/code&gt;的代码仓库，用于存放网页源代码，并会自动发布到 &lt;a href=&#34;https://username.github.io&#34;&gt;https://username.github.io&lt;/a&gt; 上。&lt;/p&gt;
+
+&lt;p&gt;配置和使用GitHub参考&lt;a href=&#34;https://help.github.com/articles/set-up-git/&#34;&gt;GitHub官方文档&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h1 id=&#34;初始化hugo代码库&#34;&gt;初始化Hugo代码库&lt;/h1&gt;
+
+&lt;p&gt;Hugo的安装，基本没有什么可说的。到&lt;a href=&#34;http://gohugo.io/&#34;&gt;官网&lt;/a&gt;下载对应系统版本，放到&lt;code&gt;PATH&lt;/code&gt;任何一个路径即可。我是放到&lt;code&gt;$USER/bin&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;下面的命令会用hugo建立一个新网站的目录结构，初始化本地Git代码仓库，并添加GitHub作为远程代码仓库：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new site site-name
+$ cd site-name
+$ git init
+$ git remote add origin git@github.com:username/blog.git
+$ git submodule add git@github.com:username/username.github.io.git public
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;开始编辑第一篇文章&#34;&gt;开始编辑第一篇文章&lt;/h1&gt;
+
+&lt;p&gt;生成Markdown模版：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new post/first-post.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;用喜欢的编辑器打开&lt;code&gt;post/first-post.md&lt;/code&gt;尽情写作吧，&lt;code&gt;emacs&lt;/code&gt;或者&lt;code&gt;vim&lt;/code&gt;都行，我是不会挑起信仰之争的。^_^&lt;/p&gt;
+
+&lt;p&gt;在看到自己的大作前，需要选择一个模版，Hugo是没有自带默认模版的。上 &lt;a href=&#34;http://themes.gohugo.io&#34;&gt;http://themes.gohugo.io&lt;/a&gt; 挑选吧。我选择了一个简洁的 &lt;a href=&#34;http://getbootstrap.com&#34;&gt;bootstrap&lt;/a&gt; 模版：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd themes
+$ git submodule add https://github.com/alanorth/hugo-theme-bootstrap4-blog.git
+$ cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;欣赏一下，运行下面命令并在浏览器打开 &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt; ：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server --theme=hugo-theme-bootstrap4-blog --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;编辑-config-toml&#34;&gt;编辑&lt;code&gt;config.toml&lt;/code&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;config.toml&lt;/code&gt;是Hugo的配置文件，没仔细研究，有几个基本参数是需要设置一下的，因为中文标题的原因&lt;code&gt;permalinks&lt;/code&gt;最好用文件名而不是默认的标题：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;https://username.github.io/&amp;quot;
+title = &amp;quot;username&#39;s blog&amp;quot;
+theme = &amp;quot;hugo-theme-bootstrap4-blog&amp;quot;
+
+copyright = &amp;quot;Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).&amp;quot;
+
+[permalinks]
+  post = &amp;quot;/:year/:month/:filename/&amp;quot;
+
+[params]
+  author = &amp;quot;Name&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;发布文章&#34;&gt;发布文章&lt;/h1&gt;
+
+&lt;p&gt;下面的命令会生成最终静态文件并发布到GitHub Pages上：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo undraft content/post/first-post.md
+hugo
+cd public
+git add --all
+git commit -m &#39;initial commit&#39;
+git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上传源代码到GitHub：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd ..
+git add --all
+git commit -m &#39;initial commit&#39;
+git push --set-upstream origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在这之后，可以用一行命令搞定，献给像我一样的懒癌患者：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;COMMIT_COMMENT=&#39;awesome post&#39;; hugo; cd public; git commit -am $COMMIT_COMMENT; git push; cd ..; git commit -am $COMMIT_COMMENT; git push
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
