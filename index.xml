@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数说</title>
-    <link>https://yiz.github.io/index.xml</link>
+    <link>http://yizhang.us/index.xml</link>
     <description>Recent content on 数说</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy;[Yi Zhang](mailto:yizh.me@gmail.com) 转载须以超链接形式标明文章原始出处和作者信息</copyright>
     <lastBuildDate>Sun, 20 Nov 2016 14:03:43 -0800</lastBuildDate>
-    <atom:link href="https://yiz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://yizhang.us/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>用Hugo在GitHub上创建自己的个人网站</title>
-      <link>https://yiz.github.io/2016/11/first-post/</link>
+      <link>http://yizhang.us/2016/11/first-post/</link>
       <pubDate>Sun, 20 Nov 2016 14:03:43 -0800</pubDate>
       
-      <guid>https://yiz.github.io/2016/11/first-post/</guid>
+      <guid>http://yizhang.us/2016/11/first-post/</guid>
       <description>&lt;h1 id=&#34;起源&#34;&gt;起源&lt;/h1&gt;
 
 &lt;p&gt;一直都有想有个地方能记录自己平时的一些想法，并可以作为交流和分享的平台。&lt;/p&gt;
